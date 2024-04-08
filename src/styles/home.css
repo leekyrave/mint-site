@@ -1,0 +1,46 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 1020px;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    display: block;
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 96px;
+}
+
+.main button {
+    margin-top: 50px;
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+    height: 1080px;
+}
+
+
+.about-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-column {
+    flex: 0.40;
+    font-size: 35px;
+    text-align: center;
+
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

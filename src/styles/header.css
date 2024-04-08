@@ -1,0 +1,48 @@
+header nav {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    background-color: #175B43;
+    box-shadow: 0 2px 20px 0 black;
+    justify-content: space-between;
+}
+
+header nav .navbar-logo {
+    margin-top: 5px;
+    margin-left: 35px;
+}
+header nav .navbar-logo img {
+    display: inline;
+    width: 45px;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header li {
+    display: inline;
+    float: left;
+    margin-right: 60px;
+}
+
+
+header li a {
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    transition: 0.75s;
+}
+
+
+header li a:hover {
+    color: rgb(152, 214, 255);
+}

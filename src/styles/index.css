@@ -1,24 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
-@import "header.css";
+@import './fonts.css';
+@import './variables.css';
 
 * {
     margin: 0;
     padding: 0;
+    user-select: none;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 
 body {
     background: no-repeat center linear-gradient(#175B43, #6FE3B9) ;
     color: #fff;
     overflow-x: hidden;
+    line-height: normal;
 }
 
 .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     width: 100vw;
+    
 }
 
 
 .button-outline {
+    text-decoration: none;
     display: block;
     color: #fff;
     font-size: 25px;
@@ -34,3 +45,10 @@ body {
     color: #4e4e4e;
     background: white;
 }
+
+
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+  

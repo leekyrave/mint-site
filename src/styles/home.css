@@ -8,16 +8,17 @@
 
 h1 {
     display: block;
-    font-family: "Russo One", sans-serif;
+    font-family: var(--header-font);
     font-weight: 400;
     font-style: normal;
     text-align: center;
     font-size: 96px;
+    line-height: normal;
 }
 
-.main button {
+.main a {
     margin-top: 50px;
-    font-family: "ABeeZee", sans-serif;
+    font-family: var(--primary-font);
     font-weight: 400;
     font-style: normal;
 }
@@ -27,20 +28,89 @@ h1 {
     display: flex;
     flex-direction: column;
     height: 1080px;
+    padding-top: 100px;
 }
 
 
 .about-container {
     display: flex;
     justify-content: space-around;
+    margin-top: 350px;
 }
 
 .about-column {
-    flex: 0.40;
+    flex: 0.35;
     font-size: 35px;
-    text-align: center;
-
-    font-family: "ABeeZee", sans-serif;
+    text-align: justify;
+    font-family: var(--primary-font);
     font-weight: 400;
     font-style: normal;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    height: 1080px;
+    padding-top: 100px;
+    align-items: center;
+}
+
+.services-container {
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-item {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.service-item img {
+    width: 100px;
+    height: 100px;
+}
+
+.service-item-description {
+    margin-left: 20px;
+    font-size: 20px;
+    text-align: justify;
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-style: italic;
+}
+
+.service-item-description p:first-child {
+    font-style: normal;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+
+.products {
+    display: none;
+    height: 1080px;
+    padding-top: 100px;
+    flex-direction: column;
+}
+
+.container::before, .container::after {
+    content: "";
+    flex: 1;
+}
+
+.carousel {
+    margin-top: 50px;
+    justify-self: center;
+    align-self: center;
+    width: var(--carousel-size-x);
+    height: var(--carousel-size-y);
+}
+
+.carousel img {
+    width: var(--carousel-size-x);
+    height: var(--carousel-size-y);
 }

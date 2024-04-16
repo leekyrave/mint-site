@@ -3,7 +3,6 @@ footer {
     margin-top: auto;
     flex-direction: column;
     border-top: 1px solid white;
-
     font-family: var(--primary-font);
     font-weight: 400;
 }
@@ -14,15 +13,14 @@ footer {
     height: 100px;
 }
 
-.footer-upper-left {
-    padding: 20px;
+.footer-upper-left, .footer-upper-right {
     display: flex;
     align-items: center;
-}
+    padding: 20px;
 
-.footer-upper-left p {
     font-size: 30px;
 }
+
 
 
 .footer-upper-left img {
@@ -32,10 +30,10 @@ footer {
 }
 
 .footer-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.4);
-}
 
-.footer-copyright p {
     font-size: 20px;
-    text-align: center;
 }

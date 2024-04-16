@@ -17,8 +17,10 @@ function Footer() {
                         <img src = {telegram} alt = "telegram"/>
                         <img src = {github} alt = "github"/>
                     </div>
-
-                    <p>Privacy Policy</p>
+                    
+                    <div className = "footer-upper-right">
+                        <p>Privacy Policy</p>
+                    </div>
                 </div>
 
                 <div className = "footer-copyright">

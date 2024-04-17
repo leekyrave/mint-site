@@ -1,5 +1,8 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
+import {Swiper, SwiperSlide} from "swiper/react";
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
 import '../../styles/home.css';
 import dev from '../../assets/dev.png';
 import bot from '../../assets/bot.png';
@@ -11,7 +14,6 @@ import g from '../../assets/g.jpg';
 
 
 function Home() {
-    
 
     return(
         <div>
@@ -42,7 +44,7 @@ function Home() {
                             <img src = {dev} alt = "dev"/>
                             
                             <div className = "service-item-description">
-                                <p>Sample Headline</p>
+                                <p>Developing projects</p>
                                 <p>Sample Text Sample Text SampleText Sample Text</p>
                             </div>
                         </div>
@@ -50,7 +52,7 @@ function Home() {
                         <div className = "service-item">
                             <img src = {game} alt = "GAME"/>
                             <div className = "service-item-description">
-                                <p>Sample Headline</p>
+                                <p>Ingame Add-ons</p>
                                 <p>Sample text sampletext sampletext sampletext</p>
                             </div>
                         </div>
@@ -58,7 +60,7 @@ function Home() {
                         <div className = "service-item">
                             <img src = {bot} alt = "bot"/>
                             <div className = "service-item-description">
-                                <p>Sample Headline</p>
+                                <p>Messenger Bots</p>
                                 <p>Sample text sampletext sampletext sampletext</p>
                             </div>
                         </div>
@@ -68,7 +70,7 @@ function Home() {
                         <div className = "service-item">
                             <img src = {www} alt = "www"/>
                             <div className = "service-item-description">
-                                <p>Sample Headline</p>
+                                <p>Web Applications</p>
                                 <p>Sample text sampletext sampletext sampletext</p>
                             </div>
                         </div>
@@ -76,7 +78,7 @@ function Home() {
                         <div className = "service-item">
                             <img src = {servers} alt = "server"/>
                             <div className = "service-item-description">
-                                <p>Sample Headline</p>
+                                <p>Server Configuration</p>
                                 <p>Sample text sampletext sampletext sampletext</p>
                             </div>
                         </div>
@@ -84,7 +86,7 @@ function Home() {
                         <div className = "service-item">
                             <img src = {settings} alt = "settings"/>
                             <div className = "service-item-description">
-                                <p>Sample Headline</p>
+                                <p>Configuration apps</p>
                                 <p>Sample text sampletext sampletext sampletext</p>
                             </div>
                         </div>
@@ -97,21 +99,21 @@ function Home() {
                     Products & Portfolio
                 </h1>
 
-                <Carousel>
-                    <Carousel.Item>
-                        <img src = {g} alt = "Image"></img>
-                        <Carousel.Caption>
-                            еуые
-                        </Carousel.Caption>
-                    </Carousel.Item>
-
-                    <Carousel.Item>
-                        <img src = {g} alt = "Image"></img>
-                        <Carousel.Caption>
-                            test
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
+                <Swiper
+                // install Swiper modules
+                loop = 'true'
+                modules={[Navigation, Pagination]}
+                spaceBetween={50}
+                slidesPerView={1}
+                navigation
+                >
+                    <SwiperSlide>
+                        <img className = 'image-carousel' src = {g} alt = "test"/>
+                    </SwiperSlide>
+                    <SwiperSlide>Slide 2</SwiperSlide>
+                    <SwiperSlide>Slide 3</SwiperSlide>
+                    <SwiperSlide>Slide 4</SwiperSlide>
+                </Swiper>
             </div>
         </div>
     )

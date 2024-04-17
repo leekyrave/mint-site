@@ -10,23 +10,26 @@ footer {
 .footer-upper {
     display: flex;
     justify-content: space-between;
-    height: 100px;
+    height: 130px;
 }
 
 .footer-upper-left, .footer-upper-right {
     display: flex;
     align-items: center;
-    padding: 20px;
-
     font-size: 30px;
+
+    padding: 35px;
 }
 
 
-
-.footer-upper-left img {
-    margin-left: 80px;
+.footer-upper-left img, .footer-upper-left a {
     height: 90px;
     width: 90px;
+    transition: 0.75s;
+}
+
+.footer-upper-left a {
+    margin-left: 80px;
 }
 
 .footer-copyright {
@@ -37,3 +40,5 @@ footer {
 
     font-size: 20px;
 }
+
+

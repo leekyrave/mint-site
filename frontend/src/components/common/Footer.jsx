@@ -8,14 +8,14 @@ import '../../styles/footer.css';
 function Footer() {
     return(
         <>
-            <footer id = '#contacts'>
+            <footer id = 'contacts'>
                 <div className = "footer-upper">
                     <div className = "footer-upper-left">
                         <p>Contact Us</p>
-                        <img src = {email} alt = "email"/>
-                        <img src = {linkedin} alt = "linkedin"/>
-                        <img src = {telegram} alt = "telegram"/>
-                        <img src = {github} alt = "github"/>
+                        <a href = "mailto: leekyraveofficial@gmail.com" target = "_blank" rel = "noreferrer"><img src = {email} alt = "email"/></a>
+                        <a href = "https://www.linkedin.com/in/dmytro-pyvovarov" target = "_blank" rel = "noreferrer"><img src = {linkedin} alt = "linkedin"/></a>
+                        <a href = "https://t.me/mint_plantation" target = "_blank" rel = "noreferrer"><img src = {telegram} alt = "telegram"/></a>
+                        <a href = "https://github.com/leekyrave" target = "_blank" rel = "noreferrer"><img src = {github} alt = "github"/></a>
                     </div>
                     
                     <div className = "footer-upper-right">

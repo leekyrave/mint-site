@@ -1,0 +1,75 @@
+.button-outline {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    font-size: 25px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 13px;
+    padding: 10px 30px 10px 30px;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.button-outline:hover {
+    color: #4e4e4e;
+    background: white;
+}
+
+.button-outline[color=green] {
+    border-color: #175B43;
+}
+
+.button-outline:hover[color=green] {
+    color: #ffffff;
+    background-color: #175B43;
+}
+
+
+.button-inlined {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 13px;
+    padding: 10px 30px 10px 30px;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.button-inlined:hover {
+    color: white;
+    background: black;
+}
+
+.button-inlined[color=green] {
+    border-color: #175B43;
+    color: white;
+    background: #175B43;
+}
+
+.button-inlined:hover[color=green] {
+    background-color: rgb(17, 71, 52);
+}
+
+.input-outline {
+    display: block;
+    font-size: 25px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 13px;
+    padding: 10px 10px 10px 10px;
+    color: white;
+}
+
+.input-outline:focus {
+    outline: none;
+}
+
+
+.label {
+    font-family: var(--primary-font);
+    margin-left: 10px;
+}

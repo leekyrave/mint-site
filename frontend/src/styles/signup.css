@@ -1,0 +1,28 @@
+.signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group p {
+    font-family: var(--primary-font);
+    font-size: 25px;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group input:not([type=submit]) {
+    margin-bottom: 10px;
+}
+
+.form-group input:last-of-type:not([type=submit]) {
+    margin-bottom: 500px;
+}

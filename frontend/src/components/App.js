@@ -1,38 +1,31 @@
 import React from 'react';
-import * as ReactDOM from "react-dom";
 import Header from './common/Header';
 import Home from './pages/Home';
+import Signup from './pages/Signup';
 import NotFound from './pages/NotFound';
 import Footer from './common/Footer';
 
 
 import {
-  createBrowserRouter,
-  RouterProvider
+  BrowserRouter,
+  Route,
+  Routes
 } from "react-router-dom";
 
 function App() {
 
-  const router = createBrowserRouter(
-    [
-      {
-        path: "/",
-        element: <Home/>
-      },
-      
-      {
-        path: "*",
-        element: <NotFound/>
-      }
-    ]
-  )
-
   return (
-    <div className = "wrapper">
-      <Header />
-        <RouterProvider router = {router}/>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className = "wrapper">
+        <Header />
+          <Routes>
+            <Route Component = {Home} index/>
+            <Route Component = {Signup} path = "/signup"/>
+            <Route Component = {NotFound} path = "*"/>
+          </Routes>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 

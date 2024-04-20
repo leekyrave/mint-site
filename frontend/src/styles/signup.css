@@ -23,6 +23,6 @@
     margin-bottom: 10px;
 }
 
-.form-group input:last-of-type:not([type=submit]) {
-    margin-bottom: 500px;
+.form-group input:last-of-type:not() {
+    margin-bottom: 0;
 }

@@ -1,36 +1,34 @@
 .main {
     display: flex;
     flex-direction: column;
-    height: 1020px;
+    height: 94.4vh;
     align-items: center;
     justify-content: center;
 }
 
 .main a {
-    margin-top: 50px;
+    margin-top: 4.62vh;
     font-family: var(--primary-font);
-    font-weight: 400;
-    font-style: normal;
 }
 
 
 .about {
     display: flex;
     flex-direction: column;
-    height: 1080px;
-    padding-top: 100px;
+    height: 100vh;
+    padding-top: 9.25vh;
 }
 
 
 .about-container {
     display: flex;
     justify-content: space-around;
-    margin-top: 350px;
+    margin-top: 32.407vh;
 }
 
 .about-column {
     flex: 0.35;
-    font-size: 35px;
+    font-size: 1.82vw;
     text-align: justify;
     font-family: var(--primary-font);
     font-weight: 400;
@@ -40,23 +38,23 @@
 .services {
     display: flex;
     flex-direction: column;
-    height: 1080px;
-    padding-top: 100px;
+    height: 100vh;
+    padding-top: 9.25vh;
     align-items: center;
 }
 
 .services-container {
     width: 100%;
-    margin-top: 150px;
+    margin-top: 13.8vh;
     display: flex;
     justify-content: space-around;
 }
 
 .service-item {
-    width: 500px;
+    width: 26vw;
     display: flex;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 5.55vh;
 }
 
 .service-item img {
@@ -65,8 +63,8 @@
 }
 
 .service-item-description {
-    margin-left: 20px;
-    font-size: 20px;
+    margin-left: 1.4vw;
+    font-size: 1.04vw;
     text-align: justify;
     font-family: var(--primary-font);
     font-weight: 400;
@@ -76,14 +74,14 @@
 .service-item-description p:first-child {
     font-style: normal;
     margin-bottom: 10px;
-    font-size: 30px;
+    font-size: 1.56vw;
 }
 
 
 .products {
     display: flex;
-    height: 1080px;
-    padding-top: 100px;
+    height: 100vh;
+    padding-top: 9.25vh;
     flex-direction: column;
 }
 
@@ -93,7 +91,7 @@
 }
 
 .swiper {
-    margin-top: 50px;
+    margin-top: 6.60vh;
     justify-self: center;
     align-self: center;
     width: var(--carousel-size-x);

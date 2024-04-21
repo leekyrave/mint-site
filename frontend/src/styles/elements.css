@@ -2,12 +2,12 @@
     text-decoration: none;
     display: block;
     color: #fff;
-    font-size: 25px;
-    background: none;
+    font-size: 1.302vw;
+    border-radius: 0.67vw;
     border: 1px solid white;
-    border-radius: 13px;
-    padding: 10px 30px 10px 30px;
-    transition: 0.8s;
+    padding: 0.52vw 1.5625vw 0.52vw 1.5625vw;
+    transition: background-color 0.8s,
+                color 0.8s;
     cursor: pointer;
 }
 
@@ -30,11 +30,11 @@
     display: block;
     text-decoration: none;
     color: black;
-    font-size: 25px;
+    font-size: 1.30vw;
     background: white;
     border: 1px solid black;
     border-radius: 13px;
-    padding: 10px 30px 10px 30px;
+    padding: 0.52vw 1.5625vw 0.52vw 1.5625vw;
     transition: 0.8s;
     cursor: pointer;
 }
@@ -56,11 +56,13 @@
 
 .input-outline {
     display: block;
-    font-size: 25px;
+    font-size: 1.30vw;
     background: none;
     border: 1px solid white;
     border-radius: 13px;
-    padding: 10px 10px 10px 10px;
+    padding: 0.52vw 0.52vw 0.52vw 0.52vw;
+    transition: background-color 0.8s,
+                color 0.8s;
     color: white;
 }
 
@@ -71,5 +73,5 @@
 
 .label {
     font-family: var(--primary-font);
-    margin-left: 10px;
+    margin-left: 0.52vw;
 }

@@ -13,14 +13,14 @@
 
 .form-group p {
     font-family: var(--primary-font);
-    font-size: 25px;
+    font-size: 1.30vw;
     align-self: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 1.85vh;
+    margin-bottom: 1.85vh;
 }
 
 .form-group input:not([type=submit]) {
-    margin-bottom: 10px;
+    margin-bottom: 0.925vh;
 }
 
 .form-group input:last-of-type:not() {

@@ -10,8 +10,10 @@ import game from '../../assets/game.png';
 import settings from '../../assets/settings.png';
 import servers from '../../assets/servers.png';
 import www from '../../assets/www.png';
-import g from '../../assets/g.jpg';
-
+import rtools from '../../assets/rbt.png';
+import prsct from '../../assets/prsct.png';
+import msgr from '../../assets/mesbot.png';
+import tols from '../../assets/tols.png';
 
 function Home() {
 
@@ -45,7 +47,7 @@ function Home() {
                             
                             <div className = "service-item-description">
                                 <p>Developing projects</p>
-                                <p>Sample Text Sample Text SampleText Sample Text</p>
+                                <p>Dive into the world of app development with our comprehensive guide and expert tips.</p>
                             </div>
                         </div>
 
@@ -53,7 +55,7 @@ function Home() {
                             <img src = {game} alt = "GAME"/>
                             <div className = "service-item-description">
                                 <p>Ingame Add-ons</p>
-                                <p>Sample text sampletext sampletext sampletext</p>
+                                <p>Explore the endless possibilities of game modification and elevate your gaming adventure.</p>
                             </div>
                         </div>
 
@@ -61,7 +63,7 @@ function Home() {
                             <img src = {bot} alt = "bot"/>
                             <div className = "service-item-description">
                                 <p>Messenger Bots</p>
-                                <p>Sample text sampletext sampletext sampletext</p>
+                                <p>Discover how to leverage Messenger bots to automate customer interactions, streamline support, and enhance user engagement across platforms.</p>
                             </div>
                         </div>
                     </div>
@@ -71,7 +73,7 @@ function Home() {
                             <img src = {www} alt = "www"/>
                             <div className = "service-item-description">
                                 <p>Web Applications</p>
-                                <p>Sample text sampletext sampletext sampletext</p>
+                                <p>Learn the ins and outs of creating powerful web applications for a seamless user experience.</p>
                             </div>
                         </div>
 
@@ -79,7 +81,7 @@ function Home() {
                             <img src = {servers} alt = "server"/>
                             <div className = "service-item-description">
                                 <p>Server Configuration</p>
-                                <p>Sample text sampletext sampletext sampletext</p>
+                                <p>Unlock the full potential of your servers by mastering the art of configuration for optimal performance.</p>
                             </div>
                         </div>
 
@@ -87,7 +89,7 @@ function Home() {
                             <img src = {settings} alt = "settings"/>
                             <div className = "service-item-description">
                                 <p>Configuration apps</p>
-                                <p>Sample text sampletext sampletext sampletext</p>
+                                <p>Maximize app potential through expert configuration. Customize settings for optimal performance and user satisfaction.</p>
                             </div>
                         </div>
                     </div>
@@ -108,11 +110,11 @@ function Home() {
                 navigation
                 >
                     <SwiperSlide>
-                        <img className = 'image-carousel' src = {g} alt = "test"/>
+                        <img className = 'image-carousel' src = {rtools} alt = "RTools"/>
                     </SwiperSlide>
-                    <SwiperSlide>Slide 2</SwiperSlide>
-                    <SwiperSlide>Slide 3</SwiperSlide>
-                    <SwiperSlide>Slide 4</SwiperSlide>
+                    <SwiperSlide><img className = 'image-carousel' alt = "Game server webpage" src = {prsct}/></SwiperSlide>
+                    <SwiperSlide><img className = 'image-carousel' alt = "Messenger bot" src = {msgr}/></SwiperSlide>
+                    <SwiperSlide><img className = 'image-carousel' alt = "Admin Tools" src = {tols}/></SwiperSlide>
                 </Swiper>
             </div>
         </div>
